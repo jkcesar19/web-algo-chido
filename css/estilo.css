@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #0f3854;
+    background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+    background-size: 100%;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.texto{
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 20px rgba(10,175, 230,1), 0 0 20px rgba(10,175, 230,0) ;
+}
+.frase2{
+    letter-spacing: 0.05em;
+    font-size: 80px;
+    padding: 5px 0;
+}
+.frase1{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+ /*boton */
+.buttons{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+.btn{
+
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1rem;
+    position: relative;
+    margin: 32px;
+}
+.btn-3{
+    
+    color: white;
+    border-radius: 40px;    
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    overflow: hidden;
+}
+
+.btn-3::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    
+    top: -50px;
+    left: -100px;
+    background: #13ff13;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.btn-3:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(16, 226, 253, 0.5), -10px 10px 25px 0 rgba(183, 0, 255, 0.794);
+}
+
+.btn-3:hover::after{
+    transform: rotate(150deg);
+}
